@@ -1,6 +1,4 @@
 
-import { Coupon } from "../components/CouponCard";
-
 // Mock salon data
 export interface Salon {
   id: string;
@@ -21,6 +19,20 @@ export interface Salon {
     lat: number;
     lng: number;
   };
+}
+
+// Export the Coupon interface from this module
+export interface Coupon {
+  id: string;
+  salonId: string;
+  salonName: string;
+  title: string;
+  description: string;
+  discount: string;
+  code?: string;
+  expirationDate: string;
+  image: string;
+  location: string;
 }
 
 export const salonData: Salon[] = [

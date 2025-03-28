@@ -1,21 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
-export interface Coupon {
-  id: string;
-  salonId: string;
-  salonName: string;
-  title: string;
-  description: string;
-  discount: string;
-  code?: string;
-  expirationDate: string;
-  image: string;
-  location: string;
-}
+import { Coupon } from '@/utils/mockData';
 
 interface CouponCardProps {
   coupon: Coupon;
